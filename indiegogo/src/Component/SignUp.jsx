@@ -20,9 +20,13 @@ import {
   import { useState } from 'react';
   
   
+  
 
 function SignUp(){
     const [showPassword, setShowPassword] = useState(false);
+    
+
+    
 
     return (
        <Container 
@@ -95,7 +99,7 @@ function SignUp(){
                 
                 </Box>
                 <Box mt={"15px"} >
-                    <Button backgroundColor={"#dc143c"} color={"white"} w="80%">CREATE ACCOUNT</Button>
+                    <Button onClick={"handleClick"} backgroundColor={"#dc143c"} color={"white"} w="80%">CREATE ACCOUNT</Button>
                 </Box>
                 <Text mt={"15px"}>OR</Text>
                 <Box>
