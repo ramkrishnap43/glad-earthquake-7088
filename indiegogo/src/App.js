@@ -8,6 +8,9 @@ import Navbar from './Component/Navbar';
 import PopUp from './Component/PopUp';
 import Footer from './Component/Footer';
 import MessageBox from './Component/MessageBox';
+import Home from "./Component/Home"
+import Block from './Component/Block';
+
 
 function App() {
   return (
@@ -18,7 +21,9 @@ function App() {
         {/* <PopUp /> */}
         {/* <Navbar /> */}
         {/* < MessageBox /> */}
-        <Footer/>
+        {/* <Footer/> */}
+        <Block />
+        {/* <Home /> */}
     </div>
   );
 }
