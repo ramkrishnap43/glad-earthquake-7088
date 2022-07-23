@@ -1,19 +1,19 @@
 import {
-    Flex,
+    
     Box,
     FormControl,
     FormLabel,
     Input,
-    Checkbox,
     Stack,
     Link,
     Avatar,
     Button,
     Heading,
     Text,
-    useColorModeValue,
     Container,
   } from '@chakra-ui/react';
+  import { Link as NavLink } from "react-router-dom"
+  import ForgetPassword from "./ForgetPassword"
 
   function Login(){
 
@@ -40,7 +40,7 @@ import {
             </FormControl>
 
             </Box>
-
+        <NavLink to="/forget">
             <Stack>
                 <Link 
                     textDecoration={"underline"}
@@ -49,16 +49,19 @@ import {
                     fontWeight="8px"
                 >Forgot your Password?</Link>
             </Stack>
+            </NavLink>
 
-            <Button 
-                width={"80%"}
-                backgroundColor="#e51075"
-                border={"#e51075"}
-                color={"white"}
-                mt={"25px"}
-            >
-                LOG IN
-            </Button>
+            <NavLink to="/">
+                <Button 
+                    width={"80%"}
+                    backgroundColor="#e51075"
+                    border={"#e51075"}
+                    color={"white"}
+                    mt={"25px"}
+                >
+                    LOG IN
+                </Button>
+            </NavLink>
 
             <Text fontSize={"18px"}
                 mt={"10px"}
@@ -71,8 +74,9 @@ import {
 
             <Text display={"block"} color=" #949494" mt={"8px"}>No posts without your permission.</Text>
 
-            <Text  line-height="1.5" mt={"25px"}>New to Indiegogo?{' '}<Link fontWeight={"bold"} textDecoration={"underline"}>Sign Up </Link></Text>
-
+            <NavLink to="/signup">
+                 <Text  line-height="1.5" mt={"25px"}>New to Indiegogo?{' '}<Link fontWeight={"bold"} textDecoration={"underline"}>Sign Up </Link></Text>
+            </NavLink>
         </Container>
     )
 }

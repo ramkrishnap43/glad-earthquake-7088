@@ -11,13 +11,13 @@ import {
     Button,
     Heading,
     Text,
-    useColorModeValue,
     Link,
     Container,
     Checkbox,
     Avatar,
   } from '@chakra-ui/react';
   import { useState } from 'react';
+  import { Link as NavLink } from "react-router-dom"
   
   
   
@@ -99,7 +99,9 @@ function SignUp(){
                 
                 </Box>
                 <Box mt={"15px"} >
-                    <Button onClick={"handleClick"} backgroundColor={"#dc143c"} color={"white"} w="80%">CREATE ACCOUNT</Button>
+                    <NavLink to="/login"> 
+                        <Button backgroundColor={"#dc143c"} color={"white"} w="80%">CREATE ACCOUNT</Button>
+                    </NavLink>
                 </Box>
                 <Text mt={"15px"}>OR</Text>
                 <Box>
@@ -107,8 +109,9 @@ function SignUp(){
                 </Box>
                 <Text display={"block"} color=" #949494" mt={"8px"}>No posts without your permission.</Text>
 
-                <Text  line-height="1.5" mt={"15px"}>Already have an account?{' '}<Link fontWeight={"bold"} textDecoration={"underline"}>Log In </Link></Text>
-    
+                <NavLink to="/login">
+                    <Text  line-height="1.5" mt={"15px"}>Already have an account?{' '}<Link fontWeight={"bold"} textDecoration={"underline"}>Log In </Link></Text>
+                </NavLink>
             </Box>
         </Container>
     )
