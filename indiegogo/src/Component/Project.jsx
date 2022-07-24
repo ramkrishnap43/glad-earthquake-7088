@@ -6,16 +6,22 @@ import {
     Avatar,Heading,Checkbox,Button,
     Text,
     Flex,
-    Link,
+   
    
     
   } from '@chakra-ui/react';
 
+  import {Link } from "react-router-dom"
+  
+  import Navbar from './Navbar';
+  import Footer from './Footer';
+ 
 
 
 function Project(){
     return (
         <Box className='main'>
+            <Navbar />
 
             <Heading>Back this project</Heading>
 
@@ -58,9 +64,11 @@ function Project(){
 
                     <Text ml={"-310"} mt="20px">Ships worldwide.</Text>
 
-                    <Button border={"1px solid black"} background={"none"} mt={"10px"} w="90%" color={"#e51075"}>GET THIS PERK</Button>
-                
+                    <Link to="/payment"><Button  border={"1px solid black"} background={"none"} mt={"10px"} w="90%" color={"#e51075"}>GET THIS PERK</Button>
+                    </Link>
             </Box>
+
+            <Footer />
             
             
 
