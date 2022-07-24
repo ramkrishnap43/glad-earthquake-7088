@@ -76,7 +76,7 @@ function Home(){
 
             <Grid templateColumns='repeat(6, 1fr)' gap={-15} mt={"30px"}>
                 <GridItem  >
-                   <NavLink to="/project"> <Box  _hover={{backgroundColor : "#E8E8E8"}} w={"89%"} h="120px"  p="20px">
+                   <NavLink to="/homepage"> <Box  _hover={{backgroundColor : "#E8E8E8"}} w={"89%"} h="120px"  p="20px">
                         <Avatar borderRadius={0} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLEjlsIt1U30C_uvR5V_bl9i7Brk6fhFg-w&usqp=CAU" />
                         <Text mt={"8px"} fontSize={"xs"}>HOME</Text>
                     </Box>

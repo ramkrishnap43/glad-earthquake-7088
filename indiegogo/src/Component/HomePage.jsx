@@ -11,6 +11,7 @@ import {
   import { Input } from '@chakra-ui/react'
   import Navbar from "./Navbar"
   import Footer from "./Footer"
+  import {Link as NavLink} from "react-router-dom"
 
 function HomePage(){
 
@@ -22,9 +23,9 @@ function HomePage(){
             <Avatar mt={"20px"} w={"100%"} h="250px" borderRadius={0} src='https://g1.iggcdn.com/assets/explore/desktop/home-feb7cf4955b32ce64fbb5843004170aa1d9349ad962007c2f29158aa33b79b99.jpg' /> 
             <Input mt={"30px"} w={"50%"} placeholder='Search for Campaigns' />
 
-        <Box w={"80%"} display="flex"  m={"auto"} mt={"30px"}>
+             <Box w={"80%"} display="flex"  m={"auto"} mt={"30px"}>
                 
-            <Box   w="25%" h={"560px"} m="auto"  >
+             <Box   w="25%" h={"560px"} m="auto"  >
 
                 <Avatar borderRadius={0}  w={"100%"} h="53%" 
                         src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_273,w_273/vtefomnglnucb68o0s0e.jpg" /> 
@@ -34,9 +35,9 @@ function HomePage(){
                     <Avatar  cursor="pointer"  background={"none"} src="https://t4.ftcdn.net/jpg/02/96/25/19/240_F_296251945_NxHb4ZVdBzinGRjBEAjSlzKHGFuaHbDV.jpg" />
                 </Box>
 
-                    <Box>
+                <NavLink to="/project"><Box>
                         <Text textAlign={"left"} ml="10px" fontWeight={"medium"}> <Link   fontSize={"lg"} >Australian Made Light Iron Cookware</Link></Text>
-                    </Box>
+                    </Box></NavLink>
 
                     <Box mt={"5px"}>
                         <Text ml="10px" textAlign={"left"} fontSize='xs'>Much lighter than cast iron and</Text>

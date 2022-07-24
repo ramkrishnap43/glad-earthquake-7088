@@ -6,6 +6,7 @@ import Login from "../Component/Login"
 import Project from "../Component/Project"
 import Payment from "../Component/Payment";
 import Order from "../Component/Order";
+import HomePage from "../Component/HomePage";
 
 export default function AllRoutes(){
 
@@ -18,6 +19,7 @@ export default function AllRoutes(){
             <Route path="/project" element={<Project />}/>
             <Route path="/payment" element={<Payment />}/>
             <Route path="/order"  element={<Order />} />
+            <Route path="/homepage" element={<HomePage/>} />
             
 
         </Routes>
