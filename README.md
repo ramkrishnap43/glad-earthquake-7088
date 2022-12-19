@@ -2,7 +2,7 @@
 
 Indiegogo Clone
 
-Project Details => 
+Project Details => Indiegogo is your destination for clever innovations in tech, design, and more, often with special perks and pricing for early adopters.
 
 
 
